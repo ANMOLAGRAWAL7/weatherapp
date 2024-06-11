@@ -1,0 +1,105 @@
+body {
+  background-color: #2c3e50; /* Dark background color */
+  color: #ecf0f1; /* Light text color */
+  font-family: 'Roboto', sans-serif;
+}
+.logo-icon {
+  width: 60px;
+  height: 60px;
+  margin-right: 15px;
+}
+
+.icon-text {
+  color: #0a577e;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-input {
+  border: 2px solid #007bff;
+  border-radius: 20px;
+  font-size: 1.1rem;
+  padding-left: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.search-input:focus {
+  border-color: #0056b3;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+.search-button {
+  border-radius: 20px;
+  font-size: 1.1rem;
+  padding: 5px 20px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+  color: white;
+}
+
+.cards {
+  border-radius: 20px;
+  padding: 15px;
+  background-color: #ffffff;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.cards:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  border-bottom: none;
+  font-size: 1.25rem;
+}
+
+.pricing-card-title {
+  font-size: 2.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    margin-top: 20px;
+  }
+
+  .icon-text {
+    font-size: 1.5rem;
+  }
+
+  .logo-icon {
+    margin-top: 10px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .website-title {
+    font-size: 1.75rem;
+  }
+
+  .pricing-card-title {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .website-title {
+    font-size: 1.25rem;
+  }
+
+  .logo-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .pricing-card-title {
+    font-size: 1.5rem;
+  }
+}
