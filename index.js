@@ -41,7 +41,7 @@ await client.hSet('jaipur', {
 
 app.get("/", async(req, res) => {
   let usercity = await client.HGETALL('jaipur');
-  res.render("index.ejs",{description:"Weather description in your city is...",usercity});
+  res.render("index",{description:"Weather description in your city is...",usercity});
   console.log("success");
 });
 app.post("/getcity",async(req,res)=>{
@@ -71,12 +71,12 @@ app.post("/getcity",async(req,res)=>{
       pressure:result.pressure
     });
     let usercity = await client.HGETALL(`${city}`);
-    res.render("index.ejs",{usercity});
+    res.render("index",{usercity});
   }
   else{
     console.log("City was cached");
     let usercity = await client.HGETALL(`${city}`);
-    res.render("index.ejs",{description:"Weather description in your city is...",usercity});
+    res.render("index",{description:"Weather description in your city is...",usercity});
   }
 });
 app.listen(port, () => {
