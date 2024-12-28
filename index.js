@@ -9,10 +9,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 const client = createClient({
-  password: 'LuxOIB5kCbjlWtkywBql4hLxbXqN75L2',
+  password: '57CKEvvlF1dOsAcF9azAFvNigta3niqH',
   socket: {
-      host: 'redis-16313.c246.us-east-1-4.ec2.redns.redis-cloud.com',
-      port: 16313
+        host: 'redis-12665.c275.us-east-1-4.ec2.redns.redis-cloud.com',
+        port: 12665
   }
 });
 await client.connect();
